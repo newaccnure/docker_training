@@ -7,9 +7,10 @@ services:
     volumes:
       - ./:/code
     ports:
-      - "5000:5000"
+      - "5000:1234"
     environment:
       FLASK_RUN_HOST: 0.0.0.0
+      FLASK_RUN_PORT: 1234
       FLASK-APP: app.py
       FLASK_ENV: development
     command: "flask run"
